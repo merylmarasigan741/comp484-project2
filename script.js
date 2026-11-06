@@ -34,12 +34,15 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     
     function clickedExerciseButton() {
       // Decrease pet happiness
+      --pet_info.happiness;
       // Decrease pet weight
+      --pet_info.weight;
       checkAndUpdatePetInfoInHtml();
     }
   
     function checkAndUpdatePetInfoInHtml() {
       checkWeightAndHappinessBeforeUpdating();  
+      
       updatePetInfoInHtml();
     }
     
